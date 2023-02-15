@@ -1,0 +1,75 @@
+.site-header {
+    position: fixed;
+    z-index: 999;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 32px;
+}
+
+.menu-button {
+    height: 26px;
+    width: 26px;
+    position: relative;
+    background: none; // Standard för att få bort bakgrund från button
+    padding: 0;        // Standard för att få bort bakgrund från button
+    border: 0;          // Standard för att få bort bakgrund från button
+    border-radius: 0;       // Standard för att få bort bakgrund från button
+
+    &--close {
+
+        .menu-button__hamburger {
+            transition: transform 0.2s 0.2s;
+            transform: rotate(45deg) translate(-50%, -50%);
+            
+            &:before {
+                transition: top 0.2s, transform 0.2s 0.2s; // Gör så översta strecket åker in i mitten, och sedan vrids i 90deg.
+                transform: rotate(90deg);
+                top: 0;
+            }
+            
+            &:after {
+                transition: width 0.2s;  // Gör så understa strecket försvinner vid klick
+                width: 0;
+            }
+            
+        }
+    }
+
+    &__hamburger {
+        transform-origin: left top;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transition: transform 0.2s;
+        transform: translate(-50%, -50%) rotate(0);
+        background-color: var(--color-dark);
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -8px;
+            height: 1px;
+            width: 100%;
+            background-color: inherit;
+        }
+
+        &:before {
+            transition: top 0.2s 0.2s, transform 0.2s;
+        }
+
+        &:after {
+            top: 8px;
+            width: 70%;
+            transition: width 0.2s 0.2s;
+        }
+        
+    }
+}
