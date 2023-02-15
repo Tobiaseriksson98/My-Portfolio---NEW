@@ -148,8 +148,46 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
+  margin-top: var(--gap-l);
+}
+
+.meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.meta-text {
+  margin-top: var(--section-gap);
+  padding: 0 400px 0 400px;
+  text-align: center;
+}
+.meta-text strong {
+  font-size: 32px;
+  text-decoration: underline 2.5px;
+}
+.meta-text span:nth-of-type(even) {
+  color: yellow;
+  background-color: blue;
+}
+.meta-text span:nth-of-type(odd) {
+  color: blue;
+  background-color: yellow;
+}
+.meta-text span {
+  border-radius: 2px;
+}
+.meta-button {
+  font-family: "interstate-mono";
+  font-size: 20px;
+  background: none;
+  border: 3px solid #000;
+  border-radius: 15px;
   margin-top: var(--gap-s);
+  margin-bottom: var(--section-gap);
+  padding: 0 var(--gap-s);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
