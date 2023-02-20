@@ -1,0 +1,60 @@
+.footer {
+   background-color: #000;
+   height: 250px;
+
+
+   &__content {
+    margin: auto;
+    height: 100%;
+    width: 800px;
+    position: relative;
+    
+    &--socials {
+    
+        .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    .wrapper a {
+        margin-top: 80px;
+        color: white;
+        font-size: 30px;
+        }
+
+    .wrapper .twitter:hover {
+        color: #46c1f6;
+    }
+    .wrapper .facebook:hover {
+        color: #3b5999;
+    }
+    .wrapper .instagram:hover {
+        color: #e1306c;
+    }
+    .wrapper .github:hover {
+        color: #2DA44E;
+    }
+    .wrapper .linkedin:hover {
+        color: #0A66C2;
+    }
+        
+    }
+    
+    &--copyright {
+            text-align: center;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            color: #fff;
+            width: 100%;
+            font-family: 'futura-pt', sans-serif;
+            font-size: 20px;
+        }
+
+   }
+}
+
+

@@ -1,8 +1,31 @@
 .swiper {
+  position: relative;
     margin-top: var(--section-gap);
     width: 80%;
     height: 500px;
-    margin-bottom: var(--section-gap); //Tillfällig
+    margin-bottom: var(--section-gap);
+
+
+    &-pagination-bullet {
+      background-color: #000;
+    }
+
+    &-button-next, &-button-prev {
+      color: #000;
+    }
+
+    &-visitpage {
+      position: absolute;
+      background: none;
+      border: none;
+      bottom: 50px;
+      right: 0;
+      margin-right: 180px;
+      font-family: 'futura-pt';
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+    }
   }
 
   .swiper-slide1, .swiper-slide2, .swiper-slide3, .swiper-slide4, .swiper-slide5, .swiper-slide6 {
@@ -12,15 +35,17 @@
       padding: 125px;
       
       &-project {
-        border-radius: 50%;
+        border-radius: 30px;
         width: 350px;
         height: 350px;
 
             &-text {
                 width: 550px;
                 height: 200px;
-                text-align: center;
+                text-align: left;
                 margin-top: 125px;
+                font-family: 'futura-pt', sans-serif;
+                font-size: 20px;
             }
 
     }
