@@ -1,0 +1,28 @@
+.swiper {
+    margin-top: var(--section-gap);
+    width: 80%;
+    height: 500px;
+    margin-bottom: var(--section-gap); //Tillfällig
+  }
+
+  .swiper-slide1, .swiper-slide2, .swiper-slide3, .swiper-slide4, .swiper-slide5, .swiper-slide6 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 125px;
+      
+      &-project {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+
+            &-text {
+                width: 550px;
+                height: 200px;
+                text-align: center;
+                margin-top: 125px;
+            }
+
+    }
+
+  }

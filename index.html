@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias Eriksson - Web Designer & Web Developer</title>
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/iak5pfj.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/iconofme.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--  -->
+    <script src="siteMenu.js" defer></script>
+    <script src="swiper.js" defer></script>
 </head>
 <body>
 
@@ -28,11 +34,56 @@
     <div class="meta">
 
         <p class="meta-text"><strong>Hello!</strong> <br> My name is Tobias Eriksson, a 25 year old student from <span>S</span><span>w</span><span>e</span><span>d</span><span>e</span><span>n</span>. I am a web designer & a web developer that really enjoy this part of being creative and to produce a product to one of my future customers.<br>Feel free to contact me about working together in the future.</p>
-        <button class="meta-button">Talk to me</button>
-
-
+        <button class="meta-button">Talk to me!</button>
 
     </div>
+
+    <!-- Project Section -->
+    <section class="projects">
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide1">
+                <img src="assets/images/bearlissimo@2x.jpg" alt="" class="swiper-slide1-project">
+                <p class="swiper-slide1-project-text">This is the finished product of restaurant Bearlissimo. A restaurant placed in central of Örebro, Sweden that is focusing on the Italian kitchen. Bearlissimo has a 5 out of 5 rating on <strong><em>ratemyrestaurant.com</em></strong> and is highly rated among the people in the Örebro-area.</p>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="assets/images/hello.o@2x.jpg" alt="" class="swiper-slide2-project">
+                <p class="swiper-slide2-project-text">This is the finished product of my teachers portfolio that I produced in cooperation with himself. This portfolio is produced with only HTML and CSS.</p>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <img src="assets/images/myblog@2x.jpg" alt="" class="swiper-slide3-project">
+                <p class="swiper-slide3-project-text">This is the finished product of one of my very first projects as a web developer. This is a very simple blog-site that is produced with only HTML and CSS. This project was created to test different ways to style a simple website.</p>
+              </div>
+              <div class="swiper-slide swiper-slide4">
+                <img src="assets/images/qrcode@2x.jpg" alt="" class="swiper-slide4-project">
+                <p class="swiper-slide4-project-text">This is the finished product of a QR code website. This was my first challenge as a Frontend Mentor member.</p>
+              </div>
+              <div class="swiper-slide swiper-slide5">
+                <img src="assets/images/submitscore@2x.jpg" alt="" class="swiper-slide5-project">
+                <p class="swiper-slide5-project-text">This is the finished product of a "Submit score" website. This was my second challenge as a Frontend Mentor member. This was the first challenge i completed when JavaScript was included.</p>
+              </div>
+              <div class="swiper-slide swiper-slide6">
+                <img src="assets/images/southafrica@2x.jpg" alt="" class="swiper-slide6-project">
+                <p class="swiper-slide6-project-text">This is the finished product of a website that includes things to do as a tourist in South Africa. This is one of the projects I created in school and the first time I used a video as a hero.</p>
+              </div>
+            </div>
+            <!-- if we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+
+          </div>
+
+
+
+    </section>
 
 </body>
 </html>
