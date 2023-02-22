@@ -229,6 +229,9 @@ li {
   margin-top: 0;
   list-style: none;
 }
+.language__list span {
+  color: white;
+}
 .language__list li {
   width: 100px;
   font-size: 1.5rem;
@@ -292,15 +295,19 @@ li {
   background: none;
   padding: 0 var(--gap-s);
   border: none;
-  text-decoration: underline #000;
-  text-underline-offset: 5px;
   cursor: pointer;
+}
+.meta .meta-button:hover {
+  color: #888;
 }
 .meta__socials {
   margin-top: 4rem;
   font-size: 36px;
   width: 400px;
   text-align: center;
+  border-bottom: 4px solid #000;
+  display: none;
+  visibility: hidden;
 }
 .meta__socials--wrapper {
   display: flex;
@@ -321,6 +328,10 @@ li {
 }
 .meta__socials--wrapper .linkedin:hover {
   color: #0A66C2;
+}
+.meta .meta__socials--visible {
+  display: block;
+  visibility: visible;
 }
 
 .swiper {
@@ -348,6 +359,9 @@ li {
   font-size: 1rem;
   cursor: pointer;
 }
+.swiper .swiper-visitpage:hover {
+  color: #888;
+}
 
 .swiper-slide1, .swiper-slide2, .swiper-slide3, .swiper-slide4, .swiper-slide5, .swiper-slide6 {
   display: flex;
@@ -359,6 +373,7 @@ li {
   border-radius: 50%;
   width: 350px;
   height: 350px;
+  object-fit: cover;
 }
 .swiper-slide1-project-text, .swiper-slide2-project-text, .swiper-slide3-project-text, .swiper-slide4-project-text, .swiper-slide5-project-text, .swiper-slide6-project-text {
   width: 550px;

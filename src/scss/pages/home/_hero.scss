@@ -38,6 +38,10 @@
     margin-top: 0;
     list-style: none;
 
+    span {
+        color: white;
+    }
+
     li {
         width: 100px;
         font-size: 1.5rem;
@@ -47,12 +51,14 @@
 
 .item-orange, .item-blue, .item-pink, .item-yellow {
     position: relative;
+
+   
 }
 
 .item-orange::before {
     content: "●",;
     color: #E34C26;
-    position: absolute;
+    position: absolute; 
   }
 .item-blue::before {
     content: "●";
