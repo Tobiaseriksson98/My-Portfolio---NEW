@@ -1,7 +1,8 @@
 .swiper {
   position: relative;
     margin-top: var(--section-gap);
-    width: 80%;
+    // width: 80%;
+    max-width: 1200px;
     height: 500px;
     margin-bottom: var(--section-gap);
 
@@ -29,6 +30,7 @@
 
     .swiper-visitpage:hover {
       color: #888;
+      transform: skew(-5deg);
     }
   }
 
@@ -42,15 +44,13 @@
       
       &-project {
         border-radius: 50%;
-        width: 350px;
-        height: 350px;
+        max-width: 300px;
+        height: 300px;
         object-fit: cover;
        
             &-text {
-                width: 550px;
-                height: 200px;
+                max-width: 550px;
                 text-align: left;
-                margin-top: 125px;
                 font-family: 'futura-pt', sans-serif;
                 font-size: 20px;
             }
@@ -58,3 +58,42 @@
     } 
 
   }
+
+  @media screen and ( max-width: 1024px ) {
+    .swiper-slide1-project-text, 
+    .swiper-slide2-project-text, 
+    .swiper-slide3-project-text, 
+    .swiper-slide4-project-text, 
+    .swiper-slide5-project-text, 
+    .swiper-slide6-project-text {
+        text-align: center;
+    }
+    
+    .swiper-visitpage {
+      margin-right: 0;
+    }
+}
+
+  @media screen and ( max-width: 768px ) {
+    .swiper-slide1-project, 
+    .swiper-slide2-project, 
+    .swiper-slide3-project, 
+    .swiper-slide4-project, 
+    .swiper-slide5-project, 
+    .swiper-slide6-project {
+      max-width: 150px;
+      height: 150px;
+    }
+
+}
+
+@media screen and ( max-width: 658px ) {
+  .swiper-slide1-project-text, 
+  .swiper-slide2-project-text, 
+  .swiper-slide3-project-text, 
+  .swiper-slide4-project-text, 
+  .swiper-slide5-project-text, 
+  .swiper-slide6-project-text {
+    font-size: 14px;
+  }
+}

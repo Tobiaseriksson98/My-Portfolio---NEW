@@ -14,7 +14,7 @@
     }
 
     &-text {
-        padding: 0 400px 0 400px;
+        max-width: 700px;
         text-align: center;
         font-family: 'futura-pt', sans-serif;
         font-weight: 400;
@@ -32,9 +32,11 @@
         border: none;
         cursor: pointer;
     }
+ 
 
     .meta-button:hover {
         color: #888;
+        transform: skew(-5deg);
     }
 
     &__socials {
@@ -80,6 +82,13 @@
 
 
    
+}
+
+@media screen and ( max-width: 658px ) {
+    .meta-text {
+        font-size: 20px;
+        padding: 0 2rem;
+    }
 }
 
 

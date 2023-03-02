@@ -9,6 +9,37 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 32px;
+    
+    &__popup {
+        width: 350px;
+        display: none;
+        
+        &--visible {
+            display: flex;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: var(--gap-m);
+
+        :hover {
+            color: #888;
+            transform: skew(-5deg);
+        }
+    }
+    
+    &__item {
+        font-family: var(--font-sans);
+        list-style: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+
+    }
 }
 
 .menu-button {

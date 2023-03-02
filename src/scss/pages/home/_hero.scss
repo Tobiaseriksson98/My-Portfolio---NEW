@@ -38,20 +38,16 @@
     margin-top: 0;
     list-style: none;
 
-    span {
-        color: white;
-    }
-
     li {
         width: 100px;
         font-size: 1.5rem;
-
+        text-align: center;
     }
 }
 
 .item-orange, .item-blue, .item-pink, .item-yellow {
     position: relative;
-
+    text-align: left;
    
 }
 
@@ -74,6 +70,17 @@
     content: "●";
     color: #F1E05A;
     position: absolute;
+  }
+
+  @media screen and ( max-width: 658px ) {
+    .hero__image {
+        max-width: 500px;
+    }
+
+    .hero__subtitle {
+        font-size: 24px;
+        top: 425px;
+    }
   }
   
 

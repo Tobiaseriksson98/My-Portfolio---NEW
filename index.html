@@ -16,11 +16,20 @@
     <script src="metaSocials.js" defer></script>
     <script src="siteMenu.js" defer></script>
     <script src="swiper.js" defer></script>
+    <script src="menuPopup.js" defer></script>
 </head>
 <body>
 
     <!-- Site Header -->
     <header class="site-header">
+
+        <div class="site-header__popup">
+          <ul class="site-header__list">
+            <li class="site-header__item"><a href="#about">About</a></li>
+            <li class="site-header__item"><a href="#projects">Projects</a></li>
+            <li class="site-header__item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
 
         <button class="menu-button">
             <div class="menu-button__hamburger"></div>
@@ -39,7 +48,7 @@
         <li class="language__item"><div class="item-orange"></div>HTML</li>
         <li class="language__item"><div class="item-blue"></div>CSS</li>
         <li class="language__item"><div class="item-pink"></div>SCSS</li>
-        <li class="language__item"><div class="item-yellow"></div>JavaScript</li>
+        <li class="language__item"><div class="item-yellow"></div>JS</li>
       </ul>
 
     </div>
@@ -47,7 +56,7 @@
    </div>
 
     <!-- Meta -->
-    <div class="meta">
+    <div id="about" class="meta">
         <h1 class="meta-title">About me</h1>
         <p class="meta-text">My name is Tobias Eriksson, a 25 year old student from Sweden. I am a web designer & a web developer that really enjoy this part of being creative and to produce a product to one of my future customers. Feel free to contact me about working together in the future.</p>
         <button class="meta-button">Talk to me</button>
@@ -78,7 +87,7 @@
     </div>
 
     <!-- Project Section -->
-    <section class="projects">
+    <section id="projects" class="projects">
 
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -132,7 +141,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
 
         <div class="footer__content">
 
