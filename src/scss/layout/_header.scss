@@ -1,5 +1,5 @@
 .site-header {
-    position: fixed;
+    position: static;
     z-index: 999;
     height: 100px;
     width: 100%;
@@ -9,6 +9,15 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 32px;
+
+    &__img {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        left: 15px;
+        top:15px;
+    }
+
     
     &__popup {
         width: 350px;

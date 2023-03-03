@@ -1,27 +1,29 @@
 .hero {
     position: relative;
 
-    &__image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 800px;
-        margin-top: var(--gap-l);
-        height: 500px;
+    &__inner {
+        height: 800px;
+
+
+        &--title {
+            font-family: 'cheap-pine';
+            font-weight: 400;
+            margin: auto;
+            text-align: center;
+            font-size: 12rem;
+            top: 250px;
+        }
     }
+
 
     &__subtitle {
         text-align: center;
         font-family: 'futura-pt';
         font-size: 34px;
-        position: absolute;
         width: 100%;
-        top: 400px;
-        left: 10px;
     }
 
     &__language {
-        position: absolute;
         left: 0;
         right: 0;
         margin-right: auto;
@@ -73,13 +75,16 @@
   }
 
   @media screen and ( max-width: 658px ) {
-    .hero__image {
-        max-width: 500px;
-    }
 
     .hero__subtitle {
         font-size: 24px;
-        top: 425px;
+        top: 380px;
+    }
+  }
+
+  @media screen and ( max-width: 535px ) {
+    .hero__inner--title {
+        font-size: 8rem;
     }
   }
   

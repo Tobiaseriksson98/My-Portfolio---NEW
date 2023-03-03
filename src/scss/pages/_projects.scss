@@ -1,10 +1,11 @@
 .swiper {
   position: relative;
     margin-top: var(--section-gap);
-    // width: 80%;
+    width: 80%;
     max-width: 1200px;
     height: 500px;
-    margin-bottom: var(--section-gap);
+    margin-top: var(--section-gap);
+
 
 
     &-pagination-bullet {
@@ -59,6 +60,16 @@
 
   }
 
+  .swiper-slide2-project {
+    object-position: 12%;
+  }
+  .swiper-slide3-project {
+    object-position: 95%;
+  }
+  .swiper-slide6-project {
+    object-position: 10%;
+  }
+  
   @media screen and ( max-width: 1024px ) {
     .swiper-slide1-project-text, 
     .swiper-slide2-project-text, 
@@ -94,6 +105,28 @@
   .swiper-slide4-project-text, 
   .swiper-slide5-project-text, 
   .swiper-slide6-project-text {
-    font-size: 14px;
+    font-size: 10px;
+  }
+}
+
+@media screen and ( max-width: 535px ) {
+
+  .swiper-slide1-project-text, 
+  .swiper-slide2-project-text, 
+  .swiper-slide3-project-text, 
+  .swiper-slide4-project-text, 
+  .swiper-slide5-project-text, 
+  .swiper-slide6-project-text {
+    display: none;
+  }
+
+  .swiper-slide1-project, 
+  .swiper-slide2-project, 
+  .swiper-slide3-project, 
+  .swiper-slide4-project, 
+  .swiper-slide5-project, 
+  .swiper-slide6-project {
+    position: absolute;
+    left: 35%;
   }
 }
